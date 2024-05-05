@@ -1,0 +1,44 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+  <servlet>
+    <servlet-name>DriverController</servlet-name>
+    <servlet-class>com.example.taxiservice.controller.DriverController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DriverController</servlet-name>
+    <url-pattern>/drivers</url-pattern>
+    <url-pattern>/driver/register</url-pattern>
+    <url-pattern>/driver/delete</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>CarController</servlet-name>
+    <servlet-class>com.example.taxiservice.controller.CarController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CarController</servlet-name>
+    <url-pattern>/cars</url-pattern>
+    <url-pattern>/car/register</url-pattern>
+    <url-pattern>/car/delete</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ManufacturerController</servlet-name>
+    <servlet-class>com.example.taxiservice.controller.ManufacturerController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ManufacturerController</servlet-name>
+    <url-pattern>/manufacturers</url-pattern>
+    <url-pattern>/manufacturer/register</url-pattern>
+    <url-pattern>/manufacturer/delete</url-pattern>
+  </servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+</web-app>
