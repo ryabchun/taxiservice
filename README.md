@@ -15,7 +15,7 @@ In this project, the following technologies have been used:
 - **Maven 3.1.1**
 - **Java 11**
 - **MySQL**
-- **Tomcat **
+- **Tomcat**
 - **Javax.servlet API**
 
 ## Getting Started
